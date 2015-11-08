@@ -31,10 +31,9 @@
 		  <li><%=link_to 'Category', new_category_path %> </li>
 		  <li><%=link_to 'Author', new_author_path %> </li>
 		  <li><%=link_to 'Publisher', new_publisher_path %> </li>
-
-              </ul>
-        </li>          
-</ul>
+        </ul>
+              </li>          
+    </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -43,7 +42,21 @@
     <h1> The BookStore<small> <%= @page_title ? @page_title: 'welcome' %></small> </h1>
     </dvi>
     </header>
-<%= yield %>
+    
+    <section>
+    	<div class="container">
+			<div class="row">
+			<div class="col-md-8">
+			<%= yield %>
+			</dvi>
+			<div class="col-md-4">
+			test
+			</dvi>
+			
+			</div>
+		
+		</div>
+	</section>
 
 </body>
 </html>
