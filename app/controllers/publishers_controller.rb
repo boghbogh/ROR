@@ -1,7 +1,7 @@
 class PublishersController < ApplicationController
   def new
       @page_title= 'Add New Publisher'
-    @apublisher = Publisher.new
+    @publisher = Publisher.new
   end
 
   def create
