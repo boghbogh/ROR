@@ -8,7 +8,7 @@ class AuthorsController < ApplicationController
   def create
      @author = Author.new(author_params)
      @author.save
-     redirect_to author_path
+     redirect_to authors_path
   end
 
   def edit
